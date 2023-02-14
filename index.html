@@ -4,17 +4,505 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happiness Survey</title>
+    <title>Happiness and Resilience</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js" defer></script>
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home"
+            >GNED-230 - Happiness: Living Your Best Life</a
+          >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#general-happiness-survey"
+                >General Happiness Scale</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resiliency-survey"
+                >Resiliency Assessment</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#authentic-happiness-survey"
+                >Authentic Happiness Inventory</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main class="container">
-      <h1>Happiness Survey</h1>
+      <!-- <section id="home"></section> -->
+      <section id="general-happiness-survey">
+        <div class="survey-card card mb-3">
+          <h1 class="card-header text-white bg-info">
+            General Happiness Scale
+          </h1>
+          <div class="card-body">
+            <form class="survey1">
+              <div class="mb-3">
+                <p>In general, I consider myself:</p>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label"
+                    >Not a very happy person</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question1"
+                    id="question1-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question1-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question1"
+                    id="question1-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question1-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question1"
+                    id="question1-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question1-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question1"
+                    id="question1-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question1-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question1"
+                    id="question1-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question1-option5"
+                    >5</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question1"
+                    id="question1-option6"
+                    value="6"
+                  />
+                  <label class="form-check-label" for="question1-option6"
+                    >6</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question1"
+                    id="question1-option7"
+                    value="7"
+                  />
+                  <label class="form-check-label" for="question1-option7"
+                    >7</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">A very happy person</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Compared to most of my peers, I consider myself:</p>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">Less happy</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question2"
+                    id="question2-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question2-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question2"
+                    id="question2-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question2-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question2"
+                    id="question2-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question2-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question2"
+                    id="question2-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question2-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question2"
+                    id="question2-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question2-option5"
+                    >5</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question2"
+                    id="question2-option6"
+                    value="6"
+                  />
+                  <label class="form-check-label" for="question2-option6"
+                    >6</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question2"
+                    id="question2-option7"
+                    value="7"
+                  />
+                  <label class="form-check-label" for="question2-option7"
+                    >7</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">More happy</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  Some people are generally very happy. They enjoy life
+                  regardless of what is going on, getting the most out of
+                  everything. To what extent does this characterization describe
+                  you?
+                </p>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">Not At All</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question3"
+                    id="question3-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question3-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question3"
+                    id="question3-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question3-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question3"
+                    id="question3-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question3-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question3"
+                    id="question3-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question3-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question3"
+                    id="question3-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question3-option5"
+                    >5</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question3"
+                    id="question3-option6"
+                    value="6"
+                  />
+                  <label class="form-check-label" for="question3-option6"
+                    >6</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question3"
+                    id="question3-option7"
+                    value="7"
+                  />
+                  <label class="form-check-label" for="question3-option7"
+                    >7</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">A Great Deal</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  Some people are generally not very happy. Although they are
+                  not depressed, they never seem as happy as they might be. To
+                  what extent does this characterization describe you?
+                </p>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">A Great Deal</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question4"
+                    id="question4-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question4-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question4"
+                    id="question4-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question4-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question4"
+                    id="question4-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question4-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question4"
+                    id="question4-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question4-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question4"
+                    id="question4-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question4-option5"
+                    >5</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question4"
+                    id="question4-option6"
+                    value="6"
+                  />
+                  <label class="form-check-label" for="question4-option6"
+                    >6</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey1-question4"
+                    id="question4-option7"
+                    value="7"
+                  />
+                  <label class="form-check-label" for="question4-option7"
+                    >7</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">Not At All</label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-secondary">Clear</button>
+            </form>
+          </div>
+        </div>
+        <div class="result-card card mb-3">
+          <h1 class="card-header text-white bg-success">
+            Interpreting Your Score
+          </h1>
+          <div class="card-body">
+            <p class="card-text score-interpretation">
+              According to Sonja Lyubomirsky, in her book
+              <em>The How of Happiness</em>, the average score ranges from 4.5
+              to 5.5 out of 7. However, think of the score as your own
+              subjective interpretation of your level of happiness,generally.
+              What might be more interesting is to notice how your own score
+              changes over time. You will complete this survey 3 times
+              throughout the course to give yourself the opportunity to do so.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="resiliency-survey">
+        <h2>Resiliency Assessment</h2>
+        <form>
+          <div class="form-check">
+            <p>In general, I consider myself:</p>
+            <label
+              >Not a very happy person
+              <input type="radio" name="q1" value="1" />1</label
+            >
+            <label><input type="radio" name="q1" value="2" />2</label>
+            <label><input type="radio" name="q1" value="3" />3</label>
+            <label><input type="radio" name="q1" value="4" />4</label>
+            <label><input type="radio" name="q1" value="5" />5</label>
+            <label><input type="radio" name="q1" value="6" />6</label>
+            <label
+              ><input type="radio" name="q1" value="7" />7 A Great Deal
+            </label>
+          </div>
+        </form>
+      </section>
+      <section id="authentic-happiness-survey">
+        <h2>Authentic Happiness Inventory</h2>
+        <form>
+          <div class="form-check">
+            <p>In general, I consider myself:</p>
+            <label
+              >Not a very happy person
+              <input type="radio" name="q1" value="1" />1</label
+            >
+            <label><input type="radio" name="q1" value="2" />2</label>
+            <label><input type="radio" name="q1" value="3" />3</label>
+            <label><input type="radio" name="q1" value="4" />4</label>
+            <label><input type="radio" name="q1" value="5" />5</label>
+            <label><input type="radio" name="q1" value="6" />6</label>
+            <label
+              ><input type="radio" name="q1" value="7" />7 A very happy person
+            </label>
+          </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>
