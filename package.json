@@ -1,0 +1,28 @@
+{
+  "name": "happiness-resilience-survey",
+  "version": "1.0.0",
+  "description": "Happiness and Resilience Initial Check-In",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanhhoang/GNED230.001.W2023.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Lanh Hoang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lanhhoang/GNED230.001.W2023/issues"
+  },
+  "homepage": "https://github.com/lanhhoang/GNED230.001.W2023#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
