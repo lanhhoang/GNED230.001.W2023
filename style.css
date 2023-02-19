@@ -54,3 +54,7 @@ section {
 section:first-of-type {
   display: block;
 }
+
+section:nth-child(4) {
+  display: block;
+}
