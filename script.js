@@ -26,17 +26,10 @@ const survey3ScoreDiv = section3.querySelector(
   ".card-text.authentic-happiness-score"
 );
 
-links.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    const href = link.getAttribute("href");
-    const target = document.querySelector(href);
-    sections.forEach((section) => {
-      section.style.display = "none";
-    });
-    target.style.display = "block";
-  });
-});
+const loadScoreData = (form, scoreElem) => {
+  const scoreData = JSON.parse(localStorage.getItem(form.className));
+  scoreElem.innerHTML = `Score: ${scoreData?.score ?? ""}`;
+};
 
 const calculateScore = (event, form, questionNum, isAvg, scoreElem) => {
   event.preventDefault();
@@ -56,7 +49,10 @@ const calculateScore = (event, form, questionNum, isAvg, scoreElem) => {
 
     console.log(`Your score is ${finalScore}`);
 
-    scoreElem.innerHTML = `<p class="fs-3">Score: ${finalScore}</p>`;
+    scoreElem.innerHTML = `Score: ${finalScore}`;
+
+    const scoreData = { score: finalScore };
+    localStorage.setItem(form.className, JSON.stringify(scoreData));
   }
 };
 
@@ -109,3 +105,23 @@ survey2ClearBtn.addEventListener("click", () =>
 survey3ClearBtn.addEventListener("click", () =>
   clearAnswer(survey3Radios, survey3ScoreDiv)
 );
+
+function init() {
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const href = link.getAttribute("href");
+      const target = document.querySelector(href);
+      sections.forEach((section) => {
+        section.style.display = "none";
+      });
+      target.style.display = "block";
+    });
+  });
+
+  loadScoreData(survey1Form, survey1ScoreDiv);
+  loadScoreData(survey2Form, survey2ScoreDiv);
+  loadScoreData(survey3Form, survey3ScoreDiv);
+}
+
+init();
