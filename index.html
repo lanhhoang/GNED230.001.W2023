@@ -50,13 +50,34 @@
       </nav>
     </header>
     <main class="container">
-      <!-- <section id="home"></section> -->
+      <section id="home">
+        <div class="card mb-3">
+          <h1 class="card-header text-white bg-info">
+            My Happiness and Resilience Initial Check-In
+          </h1>
+          <div class="card-body">
+            <p class="card-text">
+              Complete the following two surveys (and optionally the third
+              survey, below).
+            </p>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">General Happiness Scale</li>
+              <li class="list-group-item">Resiliency Assessment</li>
+              <li class="list-group-item">Authentic Happiness Inventory</li>
+            </ol>
+          </div>
+        </div>
+      </section>
       <section id="general-happiness-survey">
         <div class="survey-card card mb-3">
           <h1 class="card-header text-white bg-info">
             General Happiness Scale
           </h1>
           <div class="card-body">
+            <p class="card-text">
+              Select the point on the scale that you feel is most appropriate in
+              describing you.
+            </p>
             <form class="survey1">
               <div class="mb-3">
                 <p>In general, I consider myself:</p>
@@ -447,7 +468,22 @@
           </div>
         </div>
         <div class="result-card card mb-3">
-          <h1 class="card-header text-white bg-success">
+          <h1 class="card-header text-white bg-success">Result</h1>
+          <div class="card-body">
+            <p class="card-text score-determination">
+              To determine your final score, find the average of all 4
+              questions. To do this, add up your scores and divide by 4. Your
+              final score will be out of 7.
+            </p>
+            <p class="card-text">
+              <em>Note</em>: Your result will be shown as you answer all the
+              questions and click Submit
+            </p>
+            <p class="card-text general-happiness-score"></p>
+          </div>
+        </div>
+        <div class="score-interpretation-card card mb-3">
+          <h1 class="card-header text-white bg-primary">
             Interpreting Your Score
           </h1>
           <div class="card-body">
@@ -464,44 +500,3084 @@
         </div>
       </section>
       <section id="resiliency-survey">
-        <h2>Resiliency Assessment</h2>
-        <form>
-          <div class="form-check">
-            <p>In general, I consider myself:</p>
-            <label
-              >Not a very happy person
-              <input type="radio" name="q1" value="1" />1</label
-            >
-            <label><input type="radio" name="q1" value="2" />2</label>
-            <label><input type="radio" name="q1" value="3" />3</label>
-            <label><input type="radio" name="q1" value="4" />4</label>
-            <label><input type="radio" name="q1" value="5" />5</label>
-            <label><input type="radio" name="q1" value="6" />6</label>
-            <label
-              ><input type="radio" name="q1" value="7" />7 A Great Deal
-            </label>
+        <div class="survey-card card mb-3">
+          <h1 class="card-header text-white bg-info">Resiliency Assessment</h1>
+          <div class="card-body">
+            <p class="card-text">
+              Rate yourself on the following items: (1 = very little; 5 = very
+              strong)
+            </p>
+            <form class="survey2">
+              <div class="mb-3">
+                <p>
+                  In a crisis or chaotic situation, I calm myself and focus on
+                  taking useful actions.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question1"
+                    id="question1-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question1-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question1"
+                    id="question1-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question1-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question1"
+                    id="question1-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question1-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question1"
+                    id="question1-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question1-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question1"
+                    id="question1-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question1-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I&#39;m usually optimistic. I see difficulties as temporary,
+                  expect to overcome them, and believe things will turn out
+                  well.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question2"
+                    id="question2-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question2-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question2"
+                    id="question2-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question2-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question2"
+                    id="question2-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question2-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question2"
+                    id="question2-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question2-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question2"
+                    id="question2-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question2-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>I can tolerate high levels of uncertainty and ambiguity.</p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question3"
+                    id="question3-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question3-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question3"
+                    id="question3-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question3-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question3"
+                    id="question3-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question3-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question3"
+                    id="question3-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question3-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question3"
+                    id="question3-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question3-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I adapt quickly to new developments. I&#39;m good at bouncing
+                  back from difficulties.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question4"
+                    id="question4-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question4-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question4"
+                    id="question4-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question4-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question4"
+                    id="question4-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question4-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question4"
+                    id="question4-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question4-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question4"
+                    id="question4-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question4-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I&#39;m playful. I find the humor in rough situations, laugh
+                  at myself, and am easily I&#39;m playful. I find the humor in
+                  rough situations, laugh at myself, and am easily amused.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question5"
+                    id="question5-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question5-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question5"
+                    id="question5-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question5-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question5"
+                    id="question5-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question5-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question5"
+                    id="question5-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question5-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question5"
+                    id="question5-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question5-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I&#39;m able to recover emotionally from losses and set-backs.
+                  I have friends I can talk with. I can express my feelings to
+                  others and ask for help.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question6"
+                    id="question6-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question6-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question6"
+                    id="question6-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question6-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question6"
+                    id="question6-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question6-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question6"
+                    id="question6-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question6-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question6"
+                    id="question6-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question6-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I feel self-confident, appreciate myself, and have a healthy
+                  concept of who I am.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question7"
+                    id="question7-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question7-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question7"
+                    id="question7-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question7-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question7"
+                    id="question7-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question7-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question7"
+                    id="question7-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question7-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question7"
+                    id="question7-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question7-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I&#39;m curious. I ask questions. I want to know how things
+                  work. I like to try new ways of doing things.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question8"
+                    id="question8-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question8-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question8"
+                    id="question8-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question8-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question8"
+                    id="question8-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question8-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question8"
+                    id="question8-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question8-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question8"
+                    id="question8-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question8-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I learn valuable lessons from my experiences and from the
+                  experiences of others.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question9"
+                    id="question9-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question9-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question9"
+                    id="question9-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question9-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question9"
+                    id="question9-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question9-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question9"
+                    id="question9-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question9-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question9"
+                    id="question9-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question9-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I&#39;m good at solving problems. I can think in analytical,
+                  creative or practical ways.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question10"
+                    id="question10-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question10-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question10"
+                    id="question10-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question10-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question10"
+                    id="question10-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question10-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question10"
+                    id="question10-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question10-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question10"
+                    id="question10-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question10-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I&#39;m good at making things work well. I&#39;m often asked
+                  to lead groups and projects.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question11"
+                    id="question11-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question11-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question11"
+                    id="question11-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question11-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question11"
+                    id="question11-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question11-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question11"
+                    id="question11-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question11-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question11"
+                    id="question11-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question11-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I&#39;m very flexible. I feel comfortable with my paradoxical
+                  complexity. I&#39;m optimistic and pessimistic, trusting and
+                  cautious, unselfish and selfish, and so forth.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question12"
+                    id="question12-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question12-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question12"
+                    id="question12-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question12-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question12"
+                    id="question12-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question12-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question12"
+                    id="question12-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question12-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question12"
+                    id="question12-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question12-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I&#39;m always myself, but I&#39;ve noticed that I&#39;m
+                  different with different people and in different situations.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question13"
+                    id="question13-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question13-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question13"
+                    id="question13-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question13-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question13"
+                    id="question13-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question13-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question13"
+                    id="question13-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question13-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question13"
+                    id="question13-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question13-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I prefer to work without a written job description. I&#39;m
+                  more effective when I&#39;m free to do what I think is best in
+                  each situation.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question14"
+                    id="question14-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question14-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question14"
+                    id="question14-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question14-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question14"
+                    id="question14-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question14-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question14"
+                    id="question14-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question14-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question14"
+                    id="question14-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question14-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>I “read” people well and trust my intuition.</p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question15"
+                    id="question15-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question15-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question15"
+                    id="question15-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question15-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question15"
+                    id="question15-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question15-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question15"
+                    id="question15-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question15-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question15"
+                    id="question15-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question15-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>I&#39;m a good listener, and I have good empathy skills.</p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question16"
+                    id="question16-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question16-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question16"
+                    id="question16-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question16-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question16"
+                    id="question16-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question16-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question16"
+                    id="question16-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question16-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question16"
+                    id="question16-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question16-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I&#39;m nonjudgmental about others and am comfortable with
+                  many kinds of people.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question17"
+                    id="question17-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question17-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question17"
+                    id="question17-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question17-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question17"
+                    id="question17-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question17-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question17"
+                    id="question17-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question17-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question17"
+                    id="question17-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question17-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I&#39;m very durable. I hold up well during tough times. I
+                  have an independent spirit underneath my cooperative way of
+                  working with others.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question18"
+                    id="question18-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question18-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question18"
+                    id="question18-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question18-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question18"
+                    id="question18-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question18-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question18"
+                    id="question18-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question18-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question18"
+                    id="question18-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question18-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I&#39;ve been made stronger and better by difficult
+                  experiences.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question19"
+                    id="question19-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question19-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question19"
+                    id="question19-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question19-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question19"
+                    id="question19-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question19-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question19"
+                    id="question19-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question19-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question19"
+                    id="question19-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question19-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>
+                  I&#39;ve converted misfortune into good luck and found
+                  benefits in bad experiences.
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question20"
+                    id="question20-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question20-option1"
+                    >1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question20"
+                    id="question20-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question20-option2"
+                    >2</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question20"
+                    id="question20-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question20-option3"
+                    >3</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question20"
+                    id="question20-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question20-option4"
+                    >4</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey2-question20"
+                    id="question20-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question20-option5"
+                    >5</label
+                  >
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-secondary">Clear</button>
+            </form>
           </div>
-        </form>
+        </div>
+        <div class="result-card card mb-3">
+          <h1 class="card-header text-white bg-success">Result</h1>
+          <div class="card-body">
+            <p class="card-text score-determination">
+              To determine your final score, simply add the value of each
+              question. Your final score will be out of 100.
+            </p>
+            <p class="card-text">
+              <em>Note</em>: Your result will be shown as you answer all the
+              questions and click Submit
+            </p>
+            <p class="card-text resiliency-score"></p>
+          </div>
+        </div>
+        <div class="score-interpretation-card card mb-3">
+          <h1 class="card-header text-white bg-primary">
+            Interpreting Your Score
+          </h1>
+          <div class="card-body">
+            <ul class="list-group list-group-flush score-interpretation">
+              <li class="list-group-item">
+                <strong>LOW SCORE (&lt;50)</strong>: A self-rating score under
+                50 indicates that life is probably a struggle for you. For
+                example, you may find it challenging to handle pressure, you
+                tend not to learn anything useful from bad experiences, and/or
+                you feel hurt when people criticize you. The good news is that
+                resiliency can be learned through knowledge and a set of skills
+                which you can develop over time.
+              </li>
+              <li class="list-group-item">
+                <strong>HIGH SCORE (&gt;90)</strong>: If you rated yourself high
+                on most of these statements, you have a score over 90. This
+                means you know you are already very good at bouncing back from
+                life&#39;s setbacks. Perhaps you can share your story with
+                others and be a role model. And, there are always more nuanced
+                ways to develop an even greater sense of resiliency.
+              </li>
+              <li class="list-group-item">
+                <strong>MIDDLE SCORES (between 50 and 89)</strong>: If you
+                agreed with many of the statements and scored in the 70-89
+                range, then that is very good! And, there is room to develop
+                your skills in resilience.
+              </li>
+              <li class="list-group-item">
+                <em>Note</em>: If you scored in the 50-69 range, you appear to
+                be fairly adequate, but you may be underrating yourself. A much
+                larger percentage of people underrate themselves than overrate
+                themselves on the assessment. Some people have a habit of being
+                modest and automatically give themselves a 3 on every item for a
+                total of 60. In either case, there is room to develop your
+                skills in resilience which is a great thing.
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section id="authentic-happiness-survey">
-        <h2>Authentic Happiness Inventory</h2>
-        <form>
-          <div class="form-check">
-            <p>In general, I consider myself:</p>
-            <label
-              >Not a very happy person
-              <input type="radio" name="q1" value="1" />1</label
-            >
-            <label><input type="radio" name="q1" value="2" />2</label>
-            <label><input type="radio" name="q1" value="3" />3</label>
-            <label><input type="radio" name="q1" value="4" />4</label>
-            <label><input type="radio" name="q1" value="5" />5</label>
-            <label><input type="radio" name="q1" value="6" />6</label>
-            <label
-              ><input type="radio" name="q1" value="7" />7 A very happy person
-            </label>
+        <div class="survey-card card mb-3">
+          <h1 class="card-header text-white bg-info">
+            Authentic Happiness Inventory
+          </h1>
+          <div class="card-body">
+            <p class="card-text">
+              Please read each group of statements carefully. Then pick the one
+              statement in each group that best describes the way you have been
+              feeling for the past week, including today. Be sure to read all of
+              the statements in each group before making your choice next to the
+              statements.
+            </p>
+            <form class="survey3">
+              <div class="mb-3">
+                <p>Group #1</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question1"
+                    id="survey3-question1-option1"
+                    value="1"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question1-option1"
+                    >I feel like a failure.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question1"
+                    id="survey3-question1-option2"
+                    value="2"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question1-option2"
+                    >I do not feel like a winner.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question1"
+                    id="survey3-question1-option3"
+                    value="3"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question1-option3"
+                    >I feel like I have succeeded more than most people.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question1"
+                    id="survey3-question1-option4"
+                    value="4"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question1-option4"
+                    >As I look back on my life, all I see are victories.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question1"
+                    id="survey3-question1-option5"
+                    value="5"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question1-option5"
+                    >I feel I am extraordinarily successful.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #2</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question2"
+                    id="survey3-question2-option1"
+                    value="1"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question2-option1"
+                    >I am usually in a bad mood.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question2"
+                    id="survey3-question2-option2"
+                    value="2"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question2-option2"
+                    >I am usually in a neutral mood.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question2"
+                    id="survey3-question2-option3"
+                    value="3"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question2-option3"
+                    >I am usually in a good mood.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question2"
+                    id="survey3-question2-option4"
+                    value="4"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question2-option4"
+                    >I am usually in a great mood.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question2"
+                    id="survey3-question2-option5"
+                    value="5"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question2-option5"
+                    >I am usually in an unbelievably great mood.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #3</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question3"
+                    id="survey3-question3-option1"
+                    value="1"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question3-option1"
+                    >When I am working, I pay more attention to what is going on
+                    around me than to what I am doing.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question3"
+                    id="survey3-question3-option2"
+                    value="2"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question3-option2"
+                    >When I am working, I pay as much attention to what is going
+                    on around me as to what I am doing.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question3"
+                    id="survey3-question3-option3"
+                    value="3"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question3-option3"
+                    >When I am working, I pay more attention to what I am doing
+                    than to what is going on around me.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question3"
+                    id="survey3-question3-option4"
+                    value="4"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question3-option4"
+                    >When I am working, I rarely notice what is going on around
+                    me.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question3"
+                    id="survey3-question3-option5"
+                    value="5"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question3-option5"
+                    >When I am working, I pay so much attention to what I am
+                    doing that the outside world practically ceases to
+                    exist.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #4</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question4"
+                    id="survey3-question4-option1"
+                    value="1"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question4-option1"
+                    >My life does not have any purpose or meaning.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question4"
+                    id="survey3-question4-option2"
+                    value="2"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question4-option2"
+                    >I do not know the purpose or meaning of my life.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question4"
+                    id="survey3-question4-option3"
+                    value="3"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question4-option3"
+                    >I have a hint about my purpose in life.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question4"
+                    id="survey3-question4-option4"
+                    value="4"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question4-option4"
+                    >I have a pretty good idea about the purpose or meaning of
+                    my life.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question4"
+                    id="survey3-question4-option5"
+                    value="5"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question4-option5"
+                    >I have a very clear idea about the purpose or meaning of my
+                    life.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #5</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question5"
+                    id="survey3-question5-option1"
+                    value="1"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question5-option1"
+                    >I rarely get what I want.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question5"
+                    id="survey3-question5-option2"
+                    value="2"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question5-option2"
+                    >Sometimes, I get what I want, and sometimes not.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question5"
+                    id="survey3-question5-option3"
+                    value="3"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question5-option3"
+                    >Somewhat more often than not, I get what I want.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question5"
+                    id="survey3-question5-option4"
+                    value="4"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question5-option4"
+                    >I usually get what I want.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question5"
+                    id="survey3-question5-option5"
+                    value="5"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question5-option5"
+                    >I always get what I want.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #6</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question6"
+                    id="survey3-question6-option1"
+                    value="1"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question6-option1"
+                    >I have sorrow in my life.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question6"
+                    id="survey3-question6-option2"
+                    value="2"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question6-option2"
+                    >I have neither sorrow nor joy in my life.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question6"
+                    id="survey3-question6-option3"
+                    value="3"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question6-option3"
+                    >I have more joy than sorrow in my life.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question6"
+                    id="survey3-question6-option4"
+                    value="4"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question6-option4"
+                    >I have much more joy than sorrow in my life.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question6"
+                    id="survey3-question6-option5"
+                    value="5"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question6-option5"
+                    >My life is filled with joy.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #7</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question7"
+                    id="survey3-question7-option1"
+                    value="1"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question7-option1"
+                    >Most of the time I feel bored.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question7"
+                    id="survey3-question7-option2"
+                    value="2"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question7-option2"
+                    >Most of the time I feel neither bored nor interested in
+                    what I am doing.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question7"
+                    id="survey3-question7-option3"
+                    value="3"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question7-option3"
+                    >Most of the time I feel interested in what I am
+                    doing.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question7"
+                    id="survey3-question7-option4"
+                    value="4"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question7-option4"
+                  >
+                    Most of the time I feel quite interested in what I am doing.
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question7"
+                    id="survey3-question7-option5"
+                    value="5"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question7-option5"
+                    >Most of the time I feel fascinated by what I am doing.
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #8</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question8"
+                    id="survey3-question8-option1"
+                    value="1"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question8-option1"
+                    >I feel cut off from other people.
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question8"
+                    id="survey3-question8-option2"
+                    value="2"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question8-option2"
+                    >I feel neither close to nor cut off from other people.
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question8"
+                    id="survey3-question8-option3"
+                    value="3"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question8-option3"
+                    >I feel close to friends and family members.
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question8"
+                    id="survey3-question8-option4"
+                    value="4"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question8-option4"
+                    >I feel close to most people, even if I do not know them
+                    well.
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question8"
+                    id="survey3-question8-option5"
+                    value="5"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question8-option5"
+                    >I feel close to everyone in the world.
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #9</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question9"
+                    id="survey3-question9-option1"
+                    value="1"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question9-option1"
+                    >By objective standards, I do poorly.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question9"
+                    id="survey3-question9-option2"
+                    value="2"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question9-option2"
+                    >By objective standards, I do neither well nor
+                    poorly.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question9"
+                    id="survey3-question9-option3"
+                    value="3"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question9-option3"
+                    >By objective standards, I do rather well.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question9"
+                    id="survey3-question9-option4"
+                    value="4"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question9-option4"
+                    >By objective standards, I do quite well.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question9"
+                    id="survey3-question9-option5"
+                    value="5"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="survey3-question9-option5"
+                    >By objective standards, I do amazingly well.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #10</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question10"
+                    id="survey-3-question10-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question10-option1"
+                    >I am ashamed of myself.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question10"
+                    id="survey-3-question10-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question10-option2"
+                    >I am not ashamed of myself.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question10"
+                    id="survey-3-question10-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question10-option3"
+                    >I am proud of myself.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question10"
+                    id="survey-3-question10-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question10-option4"
+                    >I am very proud of myself.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question10"
+                    id="survey-3-question10-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question10-option5"
+                    >I am extraordinarily proud of myself.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #11</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question11"
+                    id="survey-3-question11-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question11-option1"
+                    >Time passes slowly during most of the things that I
+                    do.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question11"
+                    id="survey-3-question11-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question11-option2"
+                    >Time passes quickly during some of the things that I do and
+                    slowly for other things.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question11"
+                    id="survey-3-question11-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question11-option3"
+                    >Time passes quickly during most of the things that I
+                    do.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question11"
+                    id="survey-3-question11-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question11-option4"
+                    >Time passes quickly during all of the things that I
+                    do.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question11"
+                    id="survey-3-question11-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question11-option5"
+                    >Time passes so quickly during all of the things that I do
+                    that I do not even notice it.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #12</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question12"
+                    id="survey-3-question12-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question12-option1"
+                    >In the grand scheme of things, my existence may hurt the
+                    world.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question12"
+                    id="survey-3-question12-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question12-option2"
+                    >My existence neither helps nor hurts the world.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question12"
+                    id="survey-3-question12-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question12-option3"
+                    >My existence has a small but positive effect on the
+                    world.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question12"
+                    id="survey-3-question12-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question12-option4"
+                    >My existence makes the world a better place.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question12"
+                    id="survey-3-question12-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question12-option5"
+                    >My existence has a lasting, large, and positive impact on
+                    the world.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #13</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question13"
+                    id="survey-3-question13-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question13-option1"
+                    >I do not do most things very well.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question13"
+                    id="survey-3-question13-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question13-option2"
+                    >I do okay at most things I am doing.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question13"
+                    id="survey-3-question13-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question13-option3"
+                    >I do well at some things I am doing.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question13"
+                    id="survey-3-question13-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question13-option4"
+                    >I do well at most things I am doing.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question13"
+                    id="survey-3-question13-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question13-option5"
+                    >I do really well at whatever I am doing.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #14</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question14"
+                    id="survey-3-question14-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question14-option1"
+                    >I have little or no enthusiasm.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question14"
+                    id="survey-3-question14-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question14-option2"
+                    >My enthusiasm level is neither high nor low.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question14"
+                    id="survey-3-question14-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question14-option3"
+                    >I have a good amount of enthusiasm.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question14"
+                    id="survey-3-question14-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question14-option4"
+                    >I feel enthusiastic doing almost everything.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question14"
+                    id="survey-3-question14-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question14-option5"
+                    >I have so much enthusiasm that I feel I can do most
+                    anything.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #15</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question15"
+                    id="survey-3-question15-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question15-option1"
+                    >I do not like my work (paid or unpaid).</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question15"
+                    id="survey-3-question15-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question15-option2"
+                    >I feel neutral about my work.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question15"
+                    id="survey-3-question15-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question15-option3"
+                    >For the most part, I like my work.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question15"
+                    id="survey-3-question15-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question15-option4"
+                    >I really like my work.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question15"
+                    id="survey-3-question15-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question15-option5"
+                    >I truly love my work.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #16</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question16"
+                    id="survey-3-question16-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question16-option1"
+                    >I am pessimistic about the future.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question16"
+                    id="survey-3-question16-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question16-option2"
+                    >I am neither optimistic nor pessimistic about the
+                    future.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question16"
+                    id="survey-3-question16-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question16-option3"
+                    >I feel somewhat optimistic about the future.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question16"
+                    id="survey-3-question16-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question16-option4"
+                    >I feel quite optimistic about the future.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question16"
+                    id="survey-3-question16-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question16-option5"
+                    >I feel extraordinarily optimistic about the future.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #17</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question17"
+                    id="survey-3-question17-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question17-option1"
+                    >I have accomplished little in life.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question17"
+                    id="survey-3-question17-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question17-option2"
+                    >I have accomplished no more in life than most
+                    people.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question17"
+                    id="survey-3-question17-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question17-option3"
+                    >I have accomplished somewhat more in life than most
+                    people.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question17"
+                    id="survey-3-question17-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question17-option4"
+                    >I have accomplished more in life than most people.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question17"
+                    id="survey-3-question17-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question17-option5"
+                    >I have accomplished a great deal more in my life than most
+                    people.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #18</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question18"
+                    id="survey-3-question18-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question18-option1"
+                    >I am unhappy with myself.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question18"
+                    id="survey-3-question18-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question18-option2"
+                    >I am neither happy nor unhappy with myself--I am
+                    neutral.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question18"
+                    id="survey-3-question18-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question18-option3"
+                    >I am happy with myself.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question18"
+                    id="survey-3-question18-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question18-option4"
+                    >I am very happy with myself.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question18"
+                    id="survey-3-question18-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question18-option5"
+                    >I could not be any happier with myself.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #19</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question19"
+                    id="survey-3-question19-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question19-option1"
+                    >My skills are never challenged by the situations I
+                    encounter.
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question19"
+                    id="survey-3-question19-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question19-option2"
+                    >My skills are occasionally challenged by the situations I
+                    encounter.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question19"
+                    id="survey-3-question19-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question19-option3"
+                    >My skills are sometimes challenged by the situations I
+                    encounter.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question19"
+                    id="survey-3-question19-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question19-option4"
+                    >My skills are often challenged by the situations I
+                    encounter.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question19"
+                    id="survey-3-question19-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question19-option5"
+                    >My skills are always challenged by the situations I
+                    encounter.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #20</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question20"
+                    id="survey-3-question20-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question20-option1"
+                    >I spend all of my time doing things that are
+                    unimportant.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question20"
+                    id="survey-3-question20-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question20-option2"
+                    >I spend a lot of time doing things that are neither
+                    important nor unimportant.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question20"
+                    id="survey-3-question20-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question20-option3"
+                    >I spend some of my time every day doing things that are
+                    important.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question20"
+                    id="survey-3-question20-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question20-option4"
+                    >I spend most of my time every day doing things that are
+                    important.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question20"
+                    id="survey-3-question20-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question20-option5"
+                    >I spend practically every moment every day doing things
+                    that are important.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #21</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question21"
+                    id="survey-3-question21-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question21-option1"
+                    >If I were keeping score in life, I would be behind.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question21"
+                    id="survey-3-question21-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question21-option2"
+                    >If I were keeping score in life, I would be about
+                    even.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question21"
+                    id="survey-3-question21-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question21-option3"
+                    >If I were keeping score in life, I would be somewhat
+                    ahead.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question21"
+                    id="survey-3-question21-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question21-option4"
+                    >If I were keeping score in life, I would be ahead.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question21"
+                    id="survey-3-question21-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question21-option5"
+                    >If I were keeping score in life, I would be far
+                    ahead.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #22</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question22"
+                    id="survey-3-question22-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question22-option1"
+                    >I experience more pain than pleasure.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question22"
+                    id="survey-3-question22-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question22-option2"
+                    >I experience pain and pleasure in equal measure.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question22"
+                    id="survey-3-question22-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question22-option3"
+                    >I experience more pleasure than pain.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question22"
+                    id="survey-3-question22-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question22-option4"
+                    >I experience much more pleasure than pain.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question22"
+                    id="survey-3-question22-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question22-option5"
+                    >My life is filled with pleasure.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #23</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question23"
+                    id="survey-3-question23-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question23-option1"
+                    >I do not enjoy my daily routine.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question23"
+                    id="survey-3-question23-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question23-option2"
+                    >I feel neutral about my daily routine.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question23"
+                    id="survey-3-question23-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question23-option3"
+                    >I like my daily routine, but I am happy to get away from
+                    it.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question23"
+                    id="survey-3-question23-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question23-option4"
+                    >I like my daily routine so much that I rarely take breaks
+                    from it.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question23"
+                    id="survey-3-question23-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question23-option5"
+                    >I like my daily routine so much that I almost never take
+                    breaks from it.</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>Group #24</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question24"
+                    id="survey-3-question24-option1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="question24-option1"
+                    >My life is a bad one.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question24"
+                    id="survey-3-question24-option2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="question24-option2"
+                    >My life is an OK one.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question24"
+                    id="survey-3-question24-option3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="question24-option3"
+                    >My life is a good one.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question24"
+                    id="survey-3-question24-option4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="question24-option4"
+                    >My life is a very good one.</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="survey3-question24"
+                    id="survey-3-question24-option5"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="question24-option5"
+                    >My life is a wonderful one.</label
+                  >
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-secondary">Clear</button>
+            </form>
           </div>
-        </form>
+        </div>
+        <div class="result-card card mb-3">
+          <h1 class="card-header text-white bg-success">Result</h1>
+          <div class="card-body">
+            <p class="card-text score-determination">
+              To determine your final score, find the average of all 24
+              questions. To do this, add up your scores and divide by 24 (each
+              Group is in order; for example in Group #1 the score is 4, in
+              Group #2 the score is 3, and so on). Your final score will be out
+              of 5.
+            </p>
+            <p class="card-text">
+              <em>Note</em>: Your result will be shown as you answer all the
+              questions and click Submit
+            </p>
+            <p class="card-text authentic-happiness-score"></p>
+          </div>
+        </div>
+        <div class="score-interpretation-card card mb-3">
+          <h1 class="card-header text-white bg-primary">
+            Interpreting Your Score
+          </h1>
+          <div class="card-body">
+            <p class="card-text score-interpretation">
+              For the Authentic Happiness Inventory, you will simply compare
+              your score over time.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   </body>
